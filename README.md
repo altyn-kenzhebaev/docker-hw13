@@ -5,14 +5,15 @@
 ```
 cd docker-hw13
 ls -l
-
-README.md
-Vagrantfile
+default3000.conf   
+default80.conf   
+Dockerfile   
+README.md   
+redmine-custom  
+'Screenshot from 2023-06-01 09-08-42.png'   
+var   
+www
 ```
-Здесь:
-- README.md - файл с данным руководством
-- Vagrantfile - файл описывающий виртуальную инфраструктуру для `Vagrant`
-- otus-linux-adm - папка для работы над 2-м заданием
 Так как у меня рабочая станция на Ubuntu проводим слеующие действия в целях установки docker:
 ```
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
